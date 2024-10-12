@@ -103,7 +103,7 @@ namespace PesGrudadosLore.Content.Items.Weapons
             int targetX = (int)(mouseWorldPosition.X / 16f);
             int targetY = (int)(mouseWorldPosition.Y / 16f);
 
-            int[] randomBlocks = { ItemID.DirtBlock, ItemID.Wood, ItemID.StoneBlock, ItemID.MudBlock, ItemID.SandBlock };
+             int[] randomBlocks = {  TileID.RedBrick, TileID.RedMoss, TileID.LivingFire, TileID.FireflyinaBottle, TileID.TeamBlockRed  };
 
             int radius = Main.rand.Next(3, 7); // Random dig radius
             for (int i = -radius; i <= radius; i++)
@@ -132,8 +132,7 @@ namespace PesGrudadosLore.Content.Items.Weapons
         private void ExecuteMagicMode(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, int damage, float knockback)
         {
             int numberOfProjectiles = Main.rand.Next(5, 20); // Random number of projectiles
-            int[] randomProjectiles = { ProjectileID.BulletHighVelocity, ProjectileID.BabyDino, ProjectileID.GoldenShowerFriendly, ProjectileID.QueenSlimeMinionBlueSpike,
-            ProjectileID.Parrot };
+            int[] randomProjectiles = { ProjectileID.BulletHighVelocity, ProjectileID.AncientDoomProjectile, ProjectileID.GoldenShowerFriendly, ProjectileID.TerraBlade2Shot };
 
             for (int i = 0; i < numberOfProjectiles; i++)
             {
