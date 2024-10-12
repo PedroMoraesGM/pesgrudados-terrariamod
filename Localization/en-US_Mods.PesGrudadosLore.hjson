@@ -1,0 +1,6 @@
+Items: {
+	ExampleShootingSword: {
+		Tooltip: ""
+		DisplayName: Example Shooting Sword
+	}
+}
